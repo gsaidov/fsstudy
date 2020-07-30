@@ -7,7 +7,8 @@ html, body {
     background-color: rgb(159, 240, 235);
 } */
 body {
-    margin: 0 auto;
+    margin: auto 0;
+    background-color: rgb(200, 200, 227);
 }
 header {
     background-color: rgb(0, 187, 255);
@@ -26,6 +27,9 @@ header {
 h1 {
     font-size: 40px;
     color: white;
+}
+h3 {
+    color: rgb(40, 40, 99);
 }
 nav {
     background-color:rgb(0, 187, 255);
@@ -52,18 +56,49 @@ a:hover {
 main {
     margin-top: 150px;
     margin-bottom: 0;
-    background-color: rgb(211, 202, 202);
+    /* background-color: rgb(211, 202, 202); */
+}
+figure {
+    max-width: 400px;
+    border: 2px solid blue;
 }
 img {
-    border: 2px solid black;
+    width: 300px;
+    height: 300px;
 }
+
+
+.grid-wrapper {
+    display: grid;
+    /* grid-gap: 10px; */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: rgb(215, 232, 232);
+    /* padding: 10px; */
+    margin: 10px;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+.box:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 30px;
     }
-    /* li {
+    .media {
         display: block;
-    } */
+    }
     a {
         font-size: 15px;
     }
