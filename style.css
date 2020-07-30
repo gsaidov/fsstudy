@@ -82,6 +82,7 @@ img {
     background-color: rgb(215, 232, 232);
     /* padding: 10px; */
     margin: 10px;
+    cursor: pointer;
     text-align: center;
     transition: all 0.3s linear;
 }
