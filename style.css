@@ -62,10 +62,10 @@ figure {
     max-width: 400px;
     border: 2px solid blue;
 }
-img {
-    width: 300px;
-    height: 300px;
-}
+/* img {
+    width: 250px;
+    height: 250px;
+} */
 
 
 .grid-wrapper {
@@ -97,11 +97,18 @@ img {
     h1 {
         font-size: 30px;
     }
+    .push {
+        float: left;
+    }
     .media {
         display: block;
     }
     a {
         font-size: 15px;
+    }
+    .box > img {
+        width: 100px;
+        height: 100px;
     }
 }
 
